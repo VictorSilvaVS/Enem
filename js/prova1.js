@@ -38,12 +38,20 @@ function checkAnswers() {
     }
   
     result.innerHTML =
-      "Você acertou " +
-      score +
-      " de " +
-      questions.length +
-      " perguntas. Sua nota é " +
-      (score / questions.length) * 100 +
-      "%.";
+    "Você acertou " +
+    score +
+    " de " +
+    questions.length +
+    " perguntas. Sua nota é " +
+    (score / questions.length) * 100 +
+    "%.";
+
+  if (score === 10) {
+    result.insertAdjacentHTML("beforeend", "<br><br>Parabéns! Eu sempre soube que você era capaz, eu te amo tanto 🥰, eu estou tão orgulhoso de você!!! Estou torcendo por você!!");
+    result.classList.add("popup-message");
   }
-  
+  if (score === 0) {
+    result.insertAdjacentHTML("beforeend", "<br><br>Não desista meu amor, eu estarei sempre disposto ajudar você, se estiver dificuldades me chama!!!");
+    result.classList.add("popup-message");
+  }
+}
