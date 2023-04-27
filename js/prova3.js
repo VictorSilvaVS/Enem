@@ -2,12 +2,12 @@ function checkAnswers() {
     let score = 0;
     const answers = [
       "B", // Questão 1
-      "B", // Questão 2
-      "D", // Questão 3
-      "A", // Questão 4
-      "C", // Questão 5
-      "A", // Questão 6
-      "C", // Questão 7
+      "D", // Questão 2
+      "A", // Questão 3
+      "C", // Questão 4
+      "A", // Questão 5
+      "C", // Questão 6
+      "B", // Questão 7
       "B", // Questão 8
       "A", // Questão 9
       "B", // Questão 10
