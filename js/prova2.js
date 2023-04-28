@@ -11,6 +11,17 @@ function checkAnswers() {
       "B", // Questão 8
       "C", // Questão 9
       "E", // Questão 10
+      "B", // Questão 11
+      "A", // Questão 12
+      "C", // Questão 13
+      "D", // Questão 14
+      "E", // Questão 15
+      "E", // Questão 16
+      "B", // Questão 17
+      "B", // Questão 18
+      "A", // Questão 19
+      "B", // Questão 20
+
       // Adicione as respostas corretas de cada pergunta aqui
     ];
   
