@@ -66,3 +66,20 @@ function checkAnswers() {
     result.classList.add("popup-message");
   }
 }
+
+const scrollToTopBtn = document.querySelector("#scroll-to-top-btn");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    scrollToTopBtn.style.opacity = "1";
+  } else {
+    scrollToTopBtn.style.opacity = "0";
+  }
+});
+
+scrollToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});

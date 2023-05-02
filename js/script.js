@@ -11,6 +11,17 @@ function checkAnswers() {
       "A", // Questão 8
       "B", // Questão 9
       "C", // Questão 10
+      "C", // Questão 11
+      "B", // Questão 12
+      "D", // Questão 13
+      "E", // Questão 14
+      "B", // Questão 15
+      "D", // Questão 16
+      "A", // Questão 17
+      "D", // Questão 18
+      "D", // Questão 19
+      "E", // Questão 20
+
       // Adicione as respostas corretas de cada pergunta aqui
     ];
   
@@ -54,4 +65,22 @@ function checkAnswers() {
     result.insertAdjacentHTML("beforeend", "<br><br>Não desista meu amor, eu estarei sempre disposto ajudar você, se estiver dificuldades me chama!!!");
     result.classList.add("popup-message");
   }
+
+  
 }
+const scrollToTopBtn = document.querySelector("#scroll-to-top-btn");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    scrollToTopBtn.style.opacity = "1";
+  } else {
+    scrollToTopBtn.style.opacity = "0";
+  }
+});
+
+scrollToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
