@@ -7,14 +7,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div id="menu-top">
-        <h1>Simulado ENEM</h1>
-        <ul>
-          <li><a href="./index.html">Início</a></li>
-          <li><a href="#">Provas</a></li>
-          <li><a href="./index.html">Aulas</a></li>
-        </ul>
-      </div>
+	<div id="popup" class="popup">
+		<div class="popup-content">
+		  <p id="popup-message"></p>
+		  <button id="popup-close-button">Fechar</button>
+		</div>
+	  </div>
+	<button id="scroll-to-top-btn">&#8593;</button>
+	
+    <header id="banner" class="banner">
+		<h1 id="h1-parallax" ></h1>
+		<a href="./index.html"><button id="button-parallax" > Inicio</button></a>
+		</header>
+		<section>
 	<h1>Ciências Humanas e suas Tecnologias</h1>
 	<div id="questions">
         <div class="question">
@@ -610,23 +615,23 @@
 			<p>No contexto do início do século XXI, uma ação para solucionar os problemas logísticos da soja apresentados no texto seria a</p>
         <form>
 			<label>
-				<input type="radio" name="question19" value="A">
+				<input type="radio" name="question20" value="A">
 				A) Isenção de impostos de transportes.
 			</label>
 			<label>
-				<input type="radio" name="question19" value="B">
+				<input type="radio" name="question20" value="B">
 				B) Construção de terminais atracadouros.
 			</label>
 			<label>
-				<input type="radio" name="question19" value="C">
+				<input type="radio" name="question20" value="C">
 				C) Diversificação dos parceiros comerciais.
 			</label>
 			<label>
-				<input type="radio" name="question19" value="D">
+				<input type="radio" name="question20" value="D">
 				D) Contratação de trabalhadores portuários.
 			</label>
             <label>
-				<input type="radio" name="question19" value="E">
+				<input type="radio" name="question20" value="E">
 				E) Intensificação do policiamento nas rodovias.
 			</label>
 		</form>
@@ -638,5 +643,6 @@
 	<div id="result"></div>
 
 	<script src="js/prova2.js"></script>
+	<script src="./js/main.js"></script>
 </body>
 </html>
