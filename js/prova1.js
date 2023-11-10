@@ -26,15 +26,6 @@ function checkAnswers() {
         alert("Por favor, responda todas as perguntas antes de verificar as respostas.");
         return;
       }
-  
-      if (userAnswer.value === answers[i]) {
-        score++;
-        userAnswer.parentNode.style.color = "green";
-        userAnswer.parentNode.insertAdjacentHTML("beforeend", " - Parabéns, você acertou! EU TE AMO! 😍");
-      } else {
-        userAnswer.parentNode.style.color = "red";
-        userAnswer.parentNode.insertAdjacentHTML("beforeend", " - VOCÊ ERROU! 😓. Resposta correta é a opção " + answers[i] + ".");
-      }
     }
   
     result.innerHTML =
