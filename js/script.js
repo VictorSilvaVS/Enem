@@ -38,10 +38,10 @@ function checkAnswers() {
         return;
       }
   
-      if (userAnswer.value === answers[i]) {
+       if (userAnswer.value === answers[i]) {
         score++;
         userAnswer.parentNode.style.color = "green";
-        userAnswer.parentNode.insertAdjacentHTML("beforeend", " - Parabéns, você acertou! EU TE AMO! 😍");
+        userAnswer.parentNode.insertAdjacentHTML("beforeend", " - Parabéns, você acertou!");
       } else {
         userAnswer.parentNode.style.color = "red";
         userAnswer.parentNode.insertAdjacentHTML("beforeend", " - VOCÊ ERROU! 😓. Resposta correta é a opção " + answers[i] + ".");
@@ -58,15 +58,13 @@ function checkAnswers() {
     "%.";
 
   if (score === 10) {
-    result.insertAdjacentHTML("beforeend", "<br><br>Parabéns! Eu sempre soube que você era capaz, eu te amo tanto 🥰, eu estou tão orgulhoso de você!!! Estou torcendo por você!!");
+    result.insertAdjacentHTML("beforeend", "<br><br>Parabéns! Eu estou tão orgulhoso de você!!! Estou torcendo por você!!");
     result.classList.add("popup-message");
   }
   if (score === 0) {
-    result.insertAdjacentHTML("beforeend", "<br><br>Não desista meu amor, eu estarei sempre disposto ajudar você, se estiver dificuldades me chama!!!");
+    result.insertAdjacentHTML("beforeend", "<br><br>Não desista! Eu estarei sempre disposto ajudar você, se estiver dificuldades me chama!!!");
     result.classList.add("popup-message");
   }
-
-  
 }
 const scrollToTopBtn = document.querySelector("#scroll-to-top-btn");
 
